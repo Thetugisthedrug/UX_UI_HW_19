@@ -1,0 +1,287 @@
+/* Navbar CSS */
+
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.logo {
+    width: 60%;
+    padding: 1%;
+    text-align: right;
+}
+
+nav {
+    width: 35%;
+    padding: 1%;
+}
+
+#navBar {
+    background-color: #8F8F8F;
+    height: 48px;
+    width: 100vw;
+}
+
+.newClass {
+    width:30%;
+}
+
+ul {
+    margin: 0 auto;
+    text-align:center;
+}
+
+li {
+    margin: 16px;
+    padding: 0px;
+}
+
+body {
+    color: black;
+}
+
+button {
+    font-family:'Josefin Sans','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.flexContainer {
+    display:flex;
+    flex-direction: row;
+    justify-content:flex-start;
+}
+
+.flexChild {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 8px;
+    width: 33%;
+    margin: 8px;
+    padding: 24px
+}
+
+/* CSS Grid Designations*/
+
+.workGrid {
+    display:grid;
+    height: 600px;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 25% 75%;
+    background-color:#8F8F8F;
+    margin: 4px;
+    padding: 8px;
+}
+
+.imageProject1 {
+    display:grid;
+    height: 250px;
+    width: 200px;
+    align-items: center;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start:1;
+    grid-column-end:1;
+}
+.featureProject1{
+    display:grid;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    padding-right: 24px;
+    padding-left: 8px;
+}
+
+.viewProject {
+    width: 144px;
+    height: 40px;
+    margin: 2px;
+    padding: 4px;
+    background-color: white;
+    font-family: 'Josefin Sans';
+    font-size: 16px;
+}
+
+.imageProject2 {
+    display:grid;
+    height: 250px;
+    width: 244px;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start:1;
+    grid-column-end:1;
+}
+
+.featureProject2 {
+    display:grid;
+    grid-row-start:2;
+    grid-row-end:2;
+    grid-column-start: 2;
+    grid-column-end:2;
+    padding-right: 24px;
+    padding-left: 8px;
+}
+
+/* Headings */
+
+h1 {
+    color: black;
+    font-family:'Josefin Slab','Courier New', Courier, monospace;
+    font-size: 42px;
+    font-weight: 600;
+}
+
+h2 {
+    color: black;
+    font-family: 'Josefin Slab','Courier New', Courier, monospace;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+h3 {
+    color: black;
+    font-family:'Josefin Sans','Courier New', Courier, monospace;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+h4 {
+    color: black;
+}
+
+h5 {
+    color: black;
+}
+
+.highlight {
+    color: #282828;
+    font-family: 'Josefin Sans', sans-serif,'Courier New', Courier, monospace;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+/* Hero Image */
+
+.heroImg {
+    height: 600px;
+    padding: 25px;
+    text-align: center;
+    background-color: #8F8F8F;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.content {
+    width: 500px;
+    margin: 0 auto;
+}
+
+img {
+    width: 400px;
+}
+
+a {
+    color: #F95420;
+    font-family: 'Josefin Sans', sans-serif,'Courier New', Courier, monospace;
+    font-size: 24px;
+}
+
+p {
+    font-family:'Josefin Sans', sans-serif,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: flex-start;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* Footer */
+footer {
+    background-color: #373738;
+    padding: 10px;
+}
+
+footer ul {
+    display: inline-block;
+    vertical-align: top;
+    padding: 24px;
+}
+@media only screen and (max-width:600) {
+    .flexContainer {
+        display:flex;
+        flex-direction: column;
+        justify-content:flex-start;}
+}
+@media only screen and (max-width:600) {
+    .flexChild {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        border-style: solid;
+        border-width: 4px;
+        border-radius: 8px;
+        width: 100%;
+        margin: 8px;
+        padding: 24px
+    }
+}
+@media only screen and (max-width:600) {
+    .workGrid {
+        display:grid;
+        height: 600px;
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-columns: 100%;
+        background-color:#8F8F8F;
+        margin: 4px;
+        padding: 8px;
+    }
+}
+@media only screen and (max-width:600) {
+    .imageProject1 {
+        display:grid;
+        height: 250px;
+        width: 200px;
+        align-items: center;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        grid-column-start:1;
+        grid-column-end:1;
+    }  
+}
+@media only screen and (max-width:600) {
+    .featureProject1{
+        display:grid;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        padding-right: 24px;
+        padding-left: 8px;
+    }
+}
+@media only screen and (max-width:600){
+    .imageProject2 {
+        display:grid;
+        height: 250px;
+        width: 244px;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        grid-column-start:1;
+        grid-column-end:1;
+    }
+}
+@media only screen and (max-width:600){
+    .featureProject2 {
+        display:grid;
+        grid-row-start:4;
+        grid-row-end:4;
+        grid-column-start: 1;
+        grid-column-end:1;
+        padding-right: 24px;
+        padding-left: 8px;
+    }
+}
