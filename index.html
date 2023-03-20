@@ -1,21 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <link href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="'width=device-width, initial-scale=1.0">
+        <meta name="author" content="Ellen Hampton">
+        <meta name="keywords" content="Ellen Hampton, Portfolio, UI/UX">
+        <link href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <!--CSS Stylesheet Link-->
         <link href="CSS/style.css" rel="stylesheet" type="text/css">
-        <title>About Me Ellen Hampton UI UX Portfolio</title>
-        <style>
-            body {background-color: whitesmoke;}
-        </style>
-        <meta charset="UTF-8">
-        <meta name="keywords" content="Ellen Hampton, Portfolio, UI/UX">
-        <meta name="author" content="Ellen Hampton">
-        <meta name="viewport" content="'width=device-width, initial-scale=1.0">
+        <!--Bootstrap Head Link copied from Bootstrap site-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     </head>
     <body>
         <header class="navigation">
@@ -23,7 +20,7 @@
                 <h1>Ellen Hampton Portfolio</h1>
             </nav>
             <div class="inline-block logo">
-                <img src="images/ellenscriptlogo.png">
+                <img id="ellenlogo" src="images/ellenscriptlogo.png">
             </div>
             <nav class="inline-block newClass">
                 <ul>
@@ -37,32 +34,50 @@
                         <a href="/contact">Contact</a></li>
                 </ul>
             </nav>
+            <!--Hero Image-->
         </header>
             <section class="heroImg">
                 <div class="content">
-                    <img src="images/ellen.png" alt="photo of ellen with lake superior in background">
-                    <p>Multidisciplinary creative adept at communicating complex concepts into engaging and informative stories and designs, who brings an empathetic perspective and a blend of business acumen and design thinking.</p>
-                    <button type="button">Download Resume</button>
+                    <img id="ellenHeadshot" src="images/ellen.png" alt="photo of ellen with lake superior in background">
+                    <p id="ellenStmt">Multidisciplinary creative adept at communicating complex concepts into engaging and informative stories and designs, who brings an empathetic perspective and a blend of business acumen and design thinking.</p>
+                    <button type="button" id="buttonResume" data-toggle="modal" data-target="#m1">Download Resume</button>
                 </div>
+                <!--My Resume Modal-->
+                <div id="m1" class="modal" tabindex="-1">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h2 class="modal-title">Ellen Hampton Resume</h2>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="images/ellenhamptonResume2023a.png" alt="Ellen Hampton Resume" class="img-fluid pb-5">
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-primary">Download PDF</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </section>
             <!-- My UX Skills section coded using CSS flex-->
             <section class="mySkills">
-                <h1>My UX Skills</h1>
+                <h1 id="myuxSkills">My UX Skills</h1>
                 <div class="flexContainer">
                     <div class="flexChild">
-                        <img src="images/uidesignicon.png" alt="three mobile prototype screens one being held by a hand">
+                        <img id="skillOne" src="images/uidesignicon.png" alt="three mobile prototype screens one being held by a hand">
                         <h3>UI Design</h3>
                         <p>Multidisciplinary creative adept at communicating complex concepts into engaging and informative stories and designs, who brings an empathetic perspective and a blend of business acumen and design thinking.
                         </p>
                     </div>
                     <div class="flexChild">
-                        <img src="images/userexperienceicon.png" alt="hand holding a sticky note behind the hand eight sticky notes in a rectangle grid">
+                        <img id="skillTwo" src="images/userexperienceicon.png" alt="hand holding a sticky note behind the hand eight sticky notes in a rectangle grid">
                         <h3>UX Research</h3>
                         <p>Experience designing, curating, and executing in-person user experiences, now moving to designing digital user experiences. Passionate believer in experiential learning and storytelling to unlock inert knowledge.
                         </p>
                     </div>
                     <div class="flexChild">
-                        <img src="images/frontenddevelopmenticon.png" alt="open laptop with a screen showing a code editing program">
+                        <img id="skillThree" src="images/frontenddevelopmenticon.png" alt="open laptop with a screen showing a code editing program">
                         <h3>Front End Development</h3>
                         <p>Understanding of HTML coding, CSS Stylesheets, and Javascript and how to translate product designs into code.
                         </p>
@@ -71,10 +86,10 @@
             </section>
             <!--My Work Section Constructed Using CSS Grid-->
             <section class="My Work">
-                <h1>My Work</h1>
+                <h1 id="myWork">My Work</h1>
                 <div class="workGrid">
                     <div class="imageProject1">
-                        <img src="images/leftylucyprototype.png" alt="three prototype screens of Lefty Lucy project">
+                        <img id="leftyLucy" src="images/leftylucyprototype.png" alt="three prototype screens of Lefty Lucy project">
                     </div>
                     <div class="featureProject1">
                         <h2>Lefty Lucy</h2>
@@ -82,7 +97,7 @@
                         <button class="viewProject">View the Project</button>
                     </div>
                     <div class="imageProject2">
-                        <img src="images/rockycoastanddrillingrig.png">
+                        <img id="doe" src="images/rockycoastanddrillingrig.png">
                     </div>
                     <div class="featureProject2">
                         <h2>Department of Energy Site Redesign</h2>
@@ -91,7 +106,6 @@
                     </div>
                 </div>
             </section>
-                <h2>View All Projects</h2>
         <footer>
             <section>
                 <ul>
@@ -105,6 +119,12 @@
                         <a href="/contact">Contact</a></li>
                 </ul>
             </section>
-        </footer>  
+        </footer>
+        <!--Bootstrap script copied from Bootstrap site-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>  
     </body>
+    <!--JQuery script-->
+    <script src="https://code.jquery.com/jquery-3.6.4.js">
+    </script>
+    <script src="js/index.js"></script>
 </html>

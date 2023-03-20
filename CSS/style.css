@@ -18,8 +18,9 @@ nav {
 
 #navBar {
     background-color: #8F8F8F;
-    height: 48px;
+    height: 60px;
     width: 100vw;
+    text-align: left;
 }
 
 .newClass {
@@ -40,14 +41,24 @@ body {
     color: black;
 }
 
-button {
+#buttonResume {
+    background-color: white;
     font-family:'Josefin Sans','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 400px;
+    height: 40px;
+    font-size: 20px;
+    justify-content: center;
+    margin: 10px;
+    border-style: solid;
+    border-radius: 10px;
 }
+/* Flex Grid Elements*/
 
 .flexContainer {
     display:flex;
     flex-direction: row;
     justify-content:flex-start;
+    padding-bottom: 50px;
 }
 
 .flexChild {
@@ -61,31 +72,60 @@ button {
     border-radius: 8px;
     width: 33%;
     margin: 8px;
-    padding: 24px
+    padding-right: 32px;
+    padding-left: 32px;
+    padding-bottom: 24px;
+    padding-top: 24px;
+}
+
+#skillOne {
+    width: 400px;
+}
+
+#skillTwo {
+    width: 400px;
+}
+
+#skillThree {
+    width: 400px;
 }
 
 /* CSS Grid Designations*/
 
 .workGrid {
     display:grid;
-    height: 600px;
+    height: 1000px;
     grid-template-rows: 50% 50%;
-    grid-template-columns: 25% 75%;
-    background-color:#8F8F8F;
+    grid-template-columns: 35% 65%;
+    background-color: #FFFFFF; opacity: 0.8;background-image:  radial-gradient(hwb(0 5% 94%) 0.5px, transparent 0.5px), radial-gradient(#0c0c0c 0.5px, #d9d7d7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
+    background-size: 20px 20px;
     margin: 4px;
-    padding: 8px;
+    padding: 50px;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 8px;
 }
 
 .imageProject1 {
     display:grid;
-    height: 250px;
-    width: 200px;
-    align-items: center;
     grid-row-start: 1;
     grid-row-end: 1;
     grid-column-start:1;
     grid-column-end:1;
+    align-items: center;
 }
+
+#leftyLucy {
+    width: 600px;
+    border-style: solid;
+    border-color: #282828;
+    border-width: 4px;
+}
+
 .featureProject1{
     display:grid;
     grid-row-start: 1;
@@ -93,27 +133,39 @@ button {
     grid-column-start: 2;
     grid-column-end: 2;
     padding-right: 24px;
-    padding-left: 8px;
+    padding-left: 24px;
+    align-items: center;
 }
 
 .viewProject {
-    width: 144px;
     height: 40px;
+    width: 300px;
     margin: 2px;
     padding: 4px;
     background-color: white;
     font-family: 'Josefin Sans';
-    font-size: 16px;
+    font-size: 20px;
+    background-color: #F95420;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: #282828;
 }
 
 .imageProject2 {
     display:grid;
-    height: 250px;
-    width: 244px;
     grid-row-start: 2;
     grid-row-end: 2;
     grid-column-start:1;
     grid-column-end:1;
+    align-items: center;
+}
+
+#doe {
+    width: 600px;
+    border-style: solid;
+    border-color: #282828;
+    border-width: 4px;
 }
 
 .featureProject2 {
@@ -124,6 +176,7 @@ button {
     grid-column-end:2;
     padding-right: 24px;
     padding-left: 8px;
+    align-items: center;
 }
 
 /* Headings */
@@ -133,10 +186,11 @@ h1 {
     font-family:'Josefin Slab','Courier New', Courier, monospace;
     font-size: 42px;
     font-weight: 600;
+    padding-left: 20px;
 }
 
 h2 {
-    color: black;
+    color: #282828;
     font-family: 'Josefin Slab','Courier New', Courier, monospace;
     font-size: 32px;
     font-weight: 600;
@@ -164,23 +218,51 @@ h5 {
     font-weight: 400;
 }
 
+#myuxSkills {
+    padding-top: 100px;
+}
+
+
+
 /* Hero Image */
 
 .heroImg {
     height: 600px;
     padding: 25px;
     text-align: center;
+    background-image: url(../images/backgroundcollage.png);
     background-color: #8F8F8F;
-    background-size: cover;
+    background-size: 100%;
+    background-position: top;
     background-repeat: no-repeat;
 }
 
 .content {
     width: 500px;
     margin: 0 auto;
+    padding: 20px;
+    background-color:#F95420;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #282828;
+}
+
+#ellenStmt {
+    text-align: left;
+    word-spacing: normal;
+    padding-top: 20px;
+    padding-left: 20px;
 }
 
 img {
+    width: 400px;
+}
+
+#ellenlogo {
+    width: 400px;
+}
+
+#ellenHeadshot {
     width: 400px;
 }
 
@@ -192,7 +274,6 @@ a {
 
 p {
     font-family:'Josefin Sans', sans-serif,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    justify-content: flex-start;
     font-size: 20px;
     font-weight: 400;
 }
