@@ -52,6 +52,12 @@ body {
     border-style: solid;
     border-radius: 10px;
 }
+
+.modal::backdrop {
+    background:#282828;
+    opacity: .8;
+}
+
 /* Flex Grid Elements*/
 
 .flexContainer {
@@ -97,7 +103,7 @@ body {
     height: 1000px;
     grid-template-rows: 50% 50%;
     grid-template-columns: 35% 65%;
-    background-color: #FFFFFF; opacity: 0.8;background-image:  radial-gradient(hwb(0 5% 94%) 0.5px, transparent 0.5px), radial-gradient(#0c0c0c 0.5px, #d9d7d7 0.5px);
+    background-color: #FFFFFF; opacity: 0.8;
     background-size: 20px 20px;
     background-position: 0 0,10px 10px;
     background-size: 20px 20px;
@@ -276,6 +282,14 @@ p {
     font-family:'Josefin Sans', sans-serif,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     font-weight: 400;
+}
+
+.modal {
+    font-family:'Josefin Sans', sans-serif,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 1em;
+    max-width: 50ch
 }
 
 /* Footer */
