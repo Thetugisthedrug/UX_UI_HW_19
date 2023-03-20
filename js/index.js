@@ -8,7 +8,7 @@ $("#buttonResume").on("click", function(){
 $("#buttonResume").on("click",function(){
     console.log("You clicked on buttonResume");
 });
-// Step 2: Open module view of Resume
+// Step 2: Open module view of Resume currently not working and negatively affecting the color change code I wrote above
 const modal = document.querySelector('.modal');
 const openModal = document.querySelector('.open-button');
 const closeModal = document.querySelector('.close-button');
